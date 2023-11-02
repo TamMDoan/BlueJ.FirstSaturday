@@ -159,7 +159,7 @@ public class WriteLoops {
     // is less than “highestScore” and if it is, adds “currentScore” to
     // "runningScore"
     // and then sets “currentScore” to “gameNextScore()”
-    public int checkGameScore() {
+    public boolean checkGameScore() {
 
         //ask about this. the test expects boolean true, but the
         //method is returning an int (w)
@@ -177,7 +177,8 @@ public class WriteLoops {
             w = w + 1;
             // each time through the inner loop
         }
-        return w; // >= 3;
+        System.out.println(w);
+        return w >= 2;
     }
 
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
@@ -197,10 +198,10 @@ public class WriteLoops {
         }
         while(runningScore < highestScore);
 
-
+        //System.out.println(w);
             // each time through the inner loop
 
-        return w >= 3;
+        return w >= 4;
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
